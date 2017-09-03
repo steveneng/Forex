@@ -1,5 +1,5 @@
 function base(units) {
-    $.getJSON("http://api.fixer.io/latest?base=" + units, function(result) {
+    $.getJSON("https://api.fixer.io/latest?base=" + units, function(result) {
         for (var key in result.rates) {
             if (result.rates.hasOwnProperty(key)) {
                 $('.money').append("<div class='col-md-6 currency'>" + key + "</div>" + "<div class='currency col-md-6'>" + result.rates[key] + "</div>")
