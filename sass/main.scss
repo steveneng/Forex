@@ -2,21 +2,13 @@
 .container{
     border: 1px solid lightgray;
     margin-top: 50px;
-    padding: 20px;
+    padding: 50px;
 	background-color: white;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 }
 
 select{
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-}
-
-.currency, .country{
-    border: 1px solid transparent;
-}
-
-.m_row:hover{
-    border:1px solid lightgray;
 }
 
 body{
