@@ -1,5 +1,5 @@
 function base(units,quantity) {
-    $.getJSON("https://api.fixer.io/latest?base=" + units, function(result) {
+    $.getJSON("http://data.fixer.io/api/latest?access_key=e6ef5b09bb4e1cad42f2a013b0e2c0a6&format=1&" + units, function(result) {
         for (var key in result.rates) {
             if (result.rates.hasOwnProperty(key)) {
                 $('.money').append("<div class='col-6 currency'>" + key + "</div>" + "<div class='currency col-6 conversion'>" + parseFloat(quantity*result.rates[key]).toFixed(2) + "</div>" + "<hr>")
